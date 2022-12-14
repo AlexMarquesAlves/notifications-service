@@ -30,4 +30,11 @@ export class Notification {
   public get content(): string {
     return this.props.content;
   }
+  // category
+  public set category(category: string) {
+    this.props.category = category;
+  }
+  public get category(): string {
+    return this.props.category;
+  }
 }
