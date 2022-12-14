@@ -11,7 +11,5 @@ describe(`Send Notification`, () => {
     });
 
     expect(notification).toBeTruthy();
-
-    expect(notification).toMatchSnapshot();
   });
 });
