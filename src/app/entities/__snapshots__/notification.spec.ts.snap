@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Send Notification should be able to create a notification 1`] = `
+exports[`Notification should be able to create a notification 1`] = `
 Notification {
   "props": Object {
     "category": "social",
     "content": Content {
-      "_content": "This is a notification",
+      "_content": "Nova Solicitação de amizade",
     },
-    "createdAt": 2022-12-14T02:57:11.350Z,
+    "createdAt": 2022-12-14T02:57:11.389Z,
     "recipientId": "example-recipient-id",
   },
 }
