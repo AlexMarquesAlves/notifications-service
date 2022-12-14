@@ -12,4 +12,12 @@ export class Notification {
   constructor(props: NotificationProps) {
     this.props = props;
   }
+
+  // recipientId
+  public set recipientId(recipientId: string) {
+    this.props.recipientId = recipientId;
+  }
+  public get recipientId(): string {
+    return this.props.recipientId;
+  }
 }
