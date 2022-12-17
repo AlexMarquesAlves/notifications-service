@@ -37,6 +37,17 @@ export class NotificationsController {
     };
   }
 
+  @Get('from/:recipientId')
+  async getFromRecipient(@Param('recipientId') recipientId: string) {
+    const { notifications } = await this.getRecipientNotifications.execute({
+      recipientId,
+    });
+
+    return {
+      notifications: notifications.map(NotificationViewModel.toHTTP),
+    };
+  }
+
   @Post()
   async create(@Body() body: CreateNotificationBody) {
     const { recipientId, content, category } = body;
