@@ -48,6 +48,13 @@ export class NotificationsController {
     };
   }
 
+  @Patch(':id/read')
+  async read(@Param('id') id: string) {
+    await this.readNotification.execute({
+      notificationId: id,
+    });
+  }
+
   @Post()
   async create(@Body() body: CreateNotificationBody) {
     const { recipientId, content, category } = body;
