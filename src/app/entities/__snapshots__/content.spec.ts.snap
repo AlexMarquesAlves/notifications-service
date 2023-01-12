@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notification Content should be able to create a notification content 1`] = `
+Content {
+  "_content": "Você recebeu uma solicitação de amizade",
+}
+`;
